@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>App Website</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+
+  <style>
+    body {
+      background-color: #B7D3F2;
+      font-family: system-ui;
+      margin: 0;
+    }
+
+    .banner.text {
+      width: 50%;
+      padding: 20x;
+      padding-top: 120px;
+      padding-left: 120px;
+    }
+
+    .banner.image {
+      background: url(WebsiteDesignBannerWithLogo.jpg);
+      background-size: cover;
+      height: 800px;
+      position: relative;
+      transform: skewY(100px);
+      opacity: 95;
+      max-width: 200%;
+    }
+
+
+    li {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #B7D3F2;
+      padding: 2rem 9%;
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    }
+
+    li a {
+      color: black;
+      text-decoration: none;
+    }
+
+    .btn.check {
+      display: inline-block;
+      padding: 0.1rem;
+      border: 5rem solid var(--black);
+      color: black;
+      cursor: pointer;
+      font-size: 1 rem;
+      border-radius: 0.5rem;
+      position: relative;
+      overflow: hidden;
+      z-index: 0;
+      margin-top: 1rem;
+      text-decoration: none;
+      background-color: #8A84E2;
+      padding: 10px 24px;
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    }
+
+    .btn.check::before {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 0%;
+      height: 100%;
+      color: #B7D3F2;
+      transition: 0.3s linear;
+      z-index: -1;
+      background-color: #84AFE6;
+    }
+
+    .btn.check:hover {
+      color: #79BEEE;
+    }
+
+
+    .btn.download::before {
+      position: relative;
+      top: 0;
+      right: 100;
+      width: 0%;
+      height: 100%;
+      color: #79BEEE;
+      transition: 0.3s linear;
+      z-index: -1;
+      background-color: #8A84E2
+;
+    }
+
+    .btn.download {
+      display: inline-block;
+      padding-left: 100px;
+      border: 5rem solid var(--black);
+      color: white;
+      cursor: pointer;
+      font-size: 1 rem;
+      border-radius: 0.5rem;
+      position: relative;
+      right: -30px;
+      top: 0px;
+      overflow: hidden;
+      z-index: 0;
+      margin-top: 1rem;
+      text-decoration: none;
+      background-color: #B7D3F2;
+      padding: 10px 24px;
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    }
+
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="banner image">
+
+
+    <ul>
+
+      <li><a class="active" href="#home">Home 🏠</a></li>
+      <li><a href="#news">Our App 📱</a></li>
+      <li><a href="#contact">Contact Us 📞</a></li>
+      <li style="float:left"><a class="active" href="#Earthizen"> Sign-ify👋</a></li>
+    </ul>
+
+    <div class="banner image">
+      <div class="banner text">
+        <h1 style="font-size: 50px"> <u>
+            Sign-ify</u> 👋</h1>
+        <p><b><u>Our Mission:</u></b>  Through the efforts of our team and project we hope to make a simple tool that will aid in connecting people who can’t communicate through  ASL
+  </p>
+        <div class="row">
+          <a href="AboutTheApp.html" class="btn check">Check It Out!</a>
+          <a href="ContactUs.html" class="btn download"> Contact Us!</a>
+
+          <div class="row">
+
+          </div>
+          <script src="script.js"></script>
+          <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script>
+</body>
+
+</html>
